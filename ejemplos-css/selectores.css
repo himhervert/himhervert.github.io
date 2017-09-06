@@ -1,0 +1,21 @@
+/*Selector universal*/
+* {
+    font-family: Arial;
+}
+
+.subtitulo{
+    color:cyan;
+    background-color: black;
+}
+
+#contenedor {
+    background-color: gray;
+}
+
+#mensaje {
+    font-family:initial;
+}
+
+body > p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
