@@ -1,0 +1,44 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h2{
+    border-bottom: solid;
+    border-bottom-width: 0.1em;
+    border-bottom-style: inherit;
+    /*border-bottom-left-radius: */
+}
+#Encabezado{
+    margin: auto;
+    background-color: steelblue;
+    padding-left: 25px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color:white;
+}
+#container1{
+    float:left;
+    width: 75%;
+    height: 300px;
+    /*border-style: solid;*/
+}
+#container2{
+    background-color:lightgoldenrodyellow;
+    float: left;
+    width: 25%;
+    height: 300px;
+}
+#container2  p{
+    padding-left:3px;
+}
+#pie{
+    clear: both;
+    background-color: steelblue;
+    text-align:center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color:white;
+}
