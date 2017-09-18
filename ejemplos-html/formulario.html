@@ -1,74 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Formaularios (Parte 2)</title>
+    <title>Formularios (Parte 2)</title>
 </head>
+
 <body>
- <!--   
+    <header>
+        <h1>Tecnologías Web</h1>
+    </header>
+    <nav>
+        <span>
+            <a href="Index.html">Inicio</a>
+            <a href="About.html">Acerca de...</a>
+            <a href="Contact.html">Contacto</a>
+        </span>
+    </nav>
+    <main>
+        <!--   
     <form action="https://www.w3schools.com/action_page.php" method="GET">
     <form>
     -->
-    <form action="https://tecweb-acominf.c9users.io/envio.php" method="post">    
-    <fieldset>
-        <legend>Datos Personales</legend>
-        <label for="">
+        <form action="https://tecweb-acominf.c9users.io/envio.php" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="">
         Nombre:
         <input type="text" name="inputName" placeholder="Nombre y Apellido">
         </label>
-        <br>
-        <br>
-        
+                <br>
+                <br>
 
-        <label for="idPass">Contraseña:</label>
-        <input type="password" name="inputPass" required id="idPass">
-        <br>
-        <br>
-        
-        Edad:
-        <input type="number" name="inputAge" value="20">
-        <br>
-        
-        Foto de perfil:
-        <input type="file" name="inputFoto">
-        <br>
-        
-        Fecha de nacimiento:
-        <input type="date" name="inputFecha">
-        <br>
-        
-        Estado de origen:
-        <select name="selectEstado"> <!--Combo Box-->
+
+                <label for="idPass">Contraseña:</label>
+                <input type="password" name="inputPass" required id="idPass">
+                <br>
+                <br> Edad:
+                <input type="number" name="inputAge" value="20">
+                <br> Foto de perfil:
+                <input type="file" name="inputFoto">
+                <br> Fecha de nacimiento:
+                <input type="date" name="inputFecha">
+                <br> Estado de origen:
+                <select name="selectEstado"> <!--Combo Box-->
             <option value="Slp">San Luis Potosí</option>
             <option value="Mty">Monterrey</option>
             <option value="Gld">Guadalajara</option>
             <option value="Vrz ">Veracruz</option>
         </select>
-        <br>
-        
-        Materias Favoritas:
-        <select name="selectMateria[]" multiple>
+                <br> Materias Favoritas:
+                <select name="selectMateria[]" multiple>
             <option value="pcomp">Pensamiento computacional</option>
             <option value="quim">Quimica</option>
             <option value="Compi">Compiladores e interpretes A</option>
         </select>
-        <br>
-        <textarea name="textArea" placeholder="Escribe">
+                <br>
+                <textarea name="textArea" placeholder="Escribe">
        
         </textarea>
-    </fieldset>
-    <fieldset>
-        <legend>Preferencias</legend>
-        <p>Sistema Operativo</p>
-        Windows<input type="checkbox" name="inputSy[]" value="Windows">
-        Linux<input type="checkbox" name="inputSy[]" value="Linux">
-        OSX <input type="checkbox" name="inputSy[]" value="OSX">
-        <br>
-        <p>Teléfono</p>
-        <input type="radio" name="inTelefono">Android <input type="radio" name="inputTelefono">IOS
-    </fieldset>
-    <button type="">Registrar</button>
-    <input type="reset" value="Limpiar" >    
-</form>
+            </fieldset>
+            <fieldset>
+                <legend>Preferencias</legend>
+                <p>Sistema Operativo</p>
+                Windows<input type="checkbox" name="inputSy[]" value="Windows"> Linux
+                <input type="checkbox" name="inputSy[]" value="Linux"> OSX <input type="checkbox" name="inputSy[]" value="OSX">
+                <br>
+                <p>Teléfono</p>
+                <input type="radio" name="inTelefono">Android <input type="radio" name="inputTelefono">IOS
+            </fieldset>
+            <button type="">Registrar</button>
+            <input type="reset" value="Limpiar">
+    </main>
+    <footer>
+        <p>
+            <a href="https://validator.w3.org/check?uri=referer"><img
+                                            src="http://www.w3.org/Icons/valid-xhtml10"
+                                            alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+        </p>
+        | Copyright &copy; HimHervert | Contacto:
+        <a href="mailto:himhervert@alumnos.uaslp.edu.mx">himhervert@alumnos.uaslp.edu.mx</a> |
+    </footer>
+    </form>
 </body>
+
 </html>
