@@ -1,0 +1,15 @@
+a{
+    background-color: #76E5FC;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+a:hover{
+    background-color: #0B5A84;
+    color:red;
+}
+a:active{
+    color:#9FBBCC;
+}
