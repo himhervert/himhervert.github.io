@@ -1,0 +1,141 @@
+var arreglo = { 3, 2, 7, 6, 9, 10};
+VM208:1 Uncaught SyntaxError: Unexpected token ,
+var arreglo = [ 3, 2, 7, 6, 9, 10];
+undefined
+arreglo.leng
+undefined
+arreglo.length
+6
+arreglo.sort();
+(6) [10, 2, 3, 6, 7, 9]0: 101: 22: 33: 64: 75: 9length: 6__proto__: Array(0)
+var cadenas = ["Hola", "Mundo", "Adios", "Bye"];
+undefined
+cadenas.sort();
+(4) ["Adios", "Bye", "Hola", "Mundo"]
+var materias = [ {},{},{}];
+undefined
+materias
+(3) [{…}, {…}, {…}]0: {}__proto__: Object1: {}2: {}length: 3__proto__: Array(0)
+var materias = [ {nombre:'web', creditos:8, optativa:true}, {nombre:'Pensamiento computacional',creditos:10, optativa:false}, {}];
+undefined
+materias
+(3) [{…}, {…}, {…}]0: {nombre: "web", creditos: 8, optativa: true}1: {nombre: "Pensamiento computacional", creditos: 10, optativa: false}2: {}length: 3__proto__: Array(0)
+materias.sort('nombre');
+(3) [{…}, {…}, {…}]0: {nombre: "web", creditos: 8, optativa: true}1: {nombre: "Pensamiento computacional", creditos: 10, optativa: false}2: {}length: 3__proto__: Array(0)
+function comparaNombre(materia1, materia2){
+    if(materia1.nombre === mat2.nombre) return 0;
+    else if(materia1.nombre < materia2.nombre) return -1;
+    else return 1;
+}
+undefined
+materias.sort(comparaNombre);
+VM828:2 Uncaught ReferenceError: mat2 is not defined
+    at comparaNombre (<anonymous>:2:28)
+    at Array.sort (native)
+    at <anonymous>:1:10
+comparaNombre @ VM828:2
+(anonymous) @ VM887:1
+materias.sort(comparaNombre);
+VM828:2 Uncaught ReferenceError: mat2 is not defined
+    at comparaNombre (<anonymous>:2:28)
+    at Array.sort (native)
+    at <anonymous>:1:10
+comparaNombre @ VM828:2
+(anonymous) @ VM891:1
+materias
+(3) [{…}, {…}, {…}]0: {nombre: "web", creditos: 8, optativa: true}1: {nombre: "Pensamiento computacional", creditos: 10, optativa: false}2: {}length: 3__proto__: Array(0)
+function comparaNombre(materia1, materia2){
+    if(materia1.nombre === materia2.nombre) return 0;
+    else if(materia1.nombre < materia2.nombre) return -1;
+    else return 1;
+}
+undefined
+materias.sort(comparaNombre);
+(3) [{…}, {…}, {…}]
+var otraMateria = {nombre:'Compiladores', creditos:10, optativafalse};
+VM1077:1 Uncaught ReferenceError: optativafalse is not defined
+    at <anonymous>:1:56
+(anonymous) @ VM1077:1
+var otraMateria = {nombre:'Compiladores', creditos:10, optativa:false};
+undefined
+materias.push(otraMateria);
+4
+var nuevaMateria = {nombre:'diseño', creditos:10, optativa:false};
+undefined
+materias.unshift(nuevaMateria);
+5
+materias
+(5) [{…}, {…}, {…}, {…}, {…}]0: {nombre: "diseño", creditos: 10, optativa: false}1: {}__proto__: Object2: {nombre: "Pensamiento computacional", creditos: 10, optativa: false}3: {nombre: "web", creditos: 8, optativa: true}4: {nombre: "Compiladores", creditos: 10, optativa: false}length: 5__proto__: Array(0)
+materias.sort(comparaNombre);
+(5) [{…}, {…}, {…}, {…}, {…}]0: {nombre: "Compiladores", creditos: 10, optativa: false}1: {nombre: "Pensamiento computacional", creditos: 10, optativa: false}2: {}3: {nombre: "diseño", creditos: 10, optativa: false}4: {nombre: "web", creditos: 8, optativa: true}length: 5__proto__: Array(0)
+materias[1].optativa = true;
+true
+otraMateria
+{nombre: "Compiladores", creditos: 10, optativa: false}
+nuevaMateria
+{nombre: "diseño", creditos: 10, optativa: false}
+materias[0].optativa = true;
+true
+otraMateria
+{nombre: "Compiladores", creditos: 10, optativa: true}
+materias.sort(function (m1,m2) {
+    return m1.creditos - m2.creditos;
+});
+(5) [{…}, {…}, {…}, {…}, {…}]0: {nombre: "Compiladores", creditos: 10, optativa: true}1: {nombre: "Pensamiento computacional", creditos: 10, optativa: true}2: {}3: {nombre: "web", creditos: 8, optativa: true}4: {nombre: "diseño", creditos: 10, optativa: false}length: 5__proto__: Array(0)
+materias.sort(function (m1,m2) {
+    return m1.creditos - m2.creditos;
+});
+(5) [{…}, {…}, {…}, {…}, {…}]0: {nombre: "Compiladores", creditos: 10, optativa: true}1: {nombre: "Pensamiento computacional", creditos: 10, optativa: true}2: {}3: {nombre: "web", creditos: 8, optativa: true}4: {nombre: "diseño", creditos: 10, optativa: false}length: 5__proto__: Array(0)
+materias.pop(2);
+{nombre: "diseño", creditos: 10, optativa: false}
+materias
+(4) [{…}, {…}, {…}, {…}]0: {nombre: "Compiladores", creditos: 10, optativa: true}1: {nombre: "Pensamiento computacional", creditos: 10, optativa: true}2: {}3: {nombre: "web", creditos: 8, optativa: true}length: 4__proto__: Array(0)
+materias.pop();
+{nombre: "web", creditos: 8, optativa: true}
+materias.pop();
+{}
+var optativas = [];
+undefined
+materias.filter(function (mat) {
+    if(mat.optativa) return true;
+    else return false;
+});
+(2) [{…}, {…}]0: {nombre: "Compiladores", creditos: 10, optativa: true}1: {nombre: "Pensamiento computacional", creditos: 10, optativa: true}length: 2__proto__: Array(0)
+materias
+(2) [{…}, {…}]0: {nombre: "Compiladores", creditos: 10, optativa: true}1: {nombre: "Pensamiento computacional", creditos: 10, optativa: true}length: 2__proto__: Array(0)
+materias.filter(function (mat) { return mat.creditos >= 10; });
+(2) [{…}, {…}]
+materias.filter(function (mat) { return mat.creditos <= 10; });
+(2) [{…}, {…}]
+materias.filter(function (mat) { return mat.creditos < 10; });
+[]
+var nuevo = materias.filter(function (mat) { return mat.creditos > 10; });
+undefined
+nuevo
+[]
+var nuevo = materias.filter(function (mat) { return mat.creditos >= 10; });
+undefined
+nuevo
+(2) [{…}, {…}]
+var nuevo2 = materias.filter(function(mat));
+VM2334:1 Uncaught SyntaxError: Unexpected token )
+"hola".includes("ho");
+true
+var nuevo2 = materias.filter(function(mat) { return mat.nombre.includes("comp");} );
+undefined
+nuevo2
+[{…}]0: {nombre: "Pensamiento computacional", creditos: 10, optativa: true}length: 1__proto__: Array(0)
+var nuevo2 = materias.filter(function(mat) { if(mat.nombre.includes("comp")||mat.nombre.includes("Comp"))} );
+VM2451:1 Uncaught SyntaxError: Unexpected token }
+function buscarPorNombre(mats, nom) {
+    return mat.filter(function(mat) { return.nombre.toLowerCase(nom.ToLowerCase); });
+VM2627:2 Uncaught SyntaxError: Unexpected token .
+function buscarPorNombre(mats, nom) {
+    return mat.filter(function(mat) { return.nombre.toLowerCase(nom.ToLowerCase); });}
+VM2631:2 Uncaught SyntaxError: Unexpected token .
+function buscarPorNombre(mats, nom) {
+    return mat.filter(function(mat) { return.nombre.toLowerCase(nom.ToLowerCase); });}
+VM2632:2 Uncaught SyntaxError: Unexpected token .
+function buscarPorNombre(mats, nom) {
+    return mat.filter(function(mat) { return nombre.toLowerCase(nom.ToLowerCase());});}
+undefined

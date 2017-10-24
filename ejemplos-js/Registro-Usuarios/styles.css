@@ -1,0 +1,14 @@
+body{
+    box-sizing: border-box;
+}
+
+#contenedor {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+label{
+    display: block;
+
+}

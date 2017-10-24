@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+
+}
+#Padre{
+    display: block;
+}
+
+.caja {
+    display: block;
+}
+body {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.caja {
+    background: lightskyblue;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+}

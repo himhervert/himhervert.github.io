@@ -1,0 +1,17 @@
+var btnEnviar = document.getElementById('formulario');
+btnEnviar.addEventListener('submit', function (evento) {
+    if (!VerificaUsuario() || !VerificaContrasenia() || !VerificaTerminos()) {
+        evento.preventDefault();
+    }
+});
+
+function VerificaUsuario() {
+    return true;
+}
+
+function VerificaContrasenia(){
+    return true;
+}
+function VerificaTerminos(){
+    return true;
+}

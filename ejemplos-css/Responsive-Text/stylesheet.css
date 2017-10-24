@@ -1,0 +1,65 @@
+@media only screen and (max-width: 25rem) {
+    .tablet, .desktop, .smarttv{
+        display: none;
+    }
+    p{
+        background-color: red;
+    }
+
+    html {
+        font-size: 80%;
+    }
+
+}
+
+@media only screen and (min-width:25rem) and (max-width: 50rem) {
+    .movil, .desktop, .smarttv{
+        display: none;
+    }
+    p{
+        background-color: blue;
+    }
+    
+    html{
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width:50rem) and (max-width: 100rem) {
+    .movil, .tablet, .smarttv{
+        display: none;
+    }
+    
+    p{
+        background-color: green;
+    }
+
+    html{
+        font-size: 150%;
+    }
+}
+
+
+@media only screen and (min-width:100rem){
+    .movil, .tablet, .desktop{
+        display: none;
+    }
+
+    p{
+        background-color: purple;
+    }
+
+    html {
+        font-size: 200%;
+    }
+}
+
+p{
+    padding: 1.25rem;
+}
+
+.contenedor{
+    max-width: 75rem;
+    background-color: white; 
+    margin: 0 auto;
+}
