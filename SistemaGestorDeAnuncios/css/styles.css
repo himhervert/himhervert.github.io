@@ -127,7 +127,7 @@ body{
 
 
 .div-contenido {
-    float: left;
+    /* float: left; */
     display: inline-block;
     width: 50%;
     height:70%;
@@ -149,7 +149,7 @@ body{
 .footer {
     clear:both;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 10px;x
 }
 
 .conten{
