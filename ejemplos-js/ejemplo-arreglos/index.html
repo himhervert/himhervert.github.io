@@ -10,14 +10,20 @@
 </head>
 
 <body>
-    <h1>Materias</h1>
-    
-    <form action="" id="formulario">
-        <input type="text" id="Materia">
-        <input type="number" id="Creditos">
-        <input type="checkbox" id="Optativa">
-        <input type="button" value="Agrega Elemento" id="botonAgregar">
-    </form>
+    <div id="contenido">
+        <h1>Materias</h1>
+        <div id="contenido_form">
+            <form action="" id="formulario">
+                <label for="">Nombre de la Materia:</label>
+                <input type="text" id="Materia" placeholder="Nombre de la materia">
+                <label for="">Creditos de la Materia:</label>
+                <input type="number" id="Creditos" placeholder="Cantidad de creditos de la materiaa">
+                <label for="">¿La materia es optativa?</label>
+                <input type="checkbox" id="Optativa">
+                <input type="button" value="Agrega Elemento" id="botonAgregar">
+            </form>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 
